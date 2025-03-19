@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROOM PENS - Sign In</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-auto px-4">
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 flex-grow">
         <!-- Header -->
         <header class="text-center py-8">
             <h1 class="text-3xl font-bold text-gray-800">ROOM PENS</h1>
             <nav class="mt-4">
-                <a href="#" class="mx-2 text-blue-500 hover:text-blue-700">Home</a>
-                <a href="#" class="mx-2 text-blue-500 hover:text-blue-700">Schedule</a>
-                <a href="#" class="mx-2 text-blue-500 hover:text-blue-700">Reservation</a>
-                <a href="#" class="mx-2 text-blue-500 hover:text-blue-700">Information</a>
+                <a href="index.html" class="mx-2 text-blue-500 hover:text-blue-700">Home</a>
+                <a href="schedule.html" class="mx-2 text-blue-500 hover:text-blue-700">Schedule</a>
+                <a href="reservation.html" class="mx-2 text-blue-500 hover:text-blue-700">Reservation</a>
+                <a href="information.html" class="mx-2 text-blue-500 hover:text-blue-700">Information</a>
             </nav>
         </header>
 
         <!-- Sign In Form -->
-        <main class="flex items-center justify-center min-h-screen">
+        <main class="flex items-center justify-center">
             <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
                 <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Sign In</h2>
-                <form id="signinForm">
+                <form>
                     <div class="mb-4">
                         <label for="email" class="block text-sm font-medium text-gray-700">GMAIL</label>
                         <input
@@ -58,31 +58,11 @@
                 </p>
             </div>
         </main>
-
-        <!-- Footer -->
-        <footer class="text-center py-6 text-sm text-gray-600">
-            <p>Copyright © 2025 ROOM PENS. All Rights Reserved.</p>
-        </footer>
     </div>
 
-    <script>
-        // Handle form submission
-        document.getElementById('signinForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form from submitting
-
-            // Get input values
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-
-            // Basic validation
-            if (email && password) {
-                alert(Sign In Successful!\nEmail: ${email});
-                // Redirect to another page or perform further actions
-                window.location.href = 'dashboard.html'; // Example redirect
-            } else {
-                alert('Please fill in all fields.');
-            }
-        });
-    </script>
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-600">
+        <p>&copy; 2025 ROOM PENS. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
