@@ -27,8 +27,38 @@
         </div>
     </nav>
 
-    <section class="min-h-[400px] h-screen">
+    <section class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6">Reservasi Ruangan</h1>
         
+            <!-- Pilihan Ruangan -->
+            <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-lg mb-6">
+                <h2 class="text-xl font-bold text-gray-700 mb-4">Pilih Jenis Ruangan</h2>
+                
+                <label class="flex items-center space-x-3 mb-3">
+                    <input type="radio" name="roomType" value="kelas" class="form-radio text-blue-600">
+                    <span class="text-gray-800">Ruangan Kelas</span>
+                </label>
+        
+                <label class="flex items-center space-x-3">
+                    <input type="radio" name="roomType" value="teater" class="form-radio text-blue-600">
+                    <span class="text-gray-800">Ruangan Teater</span>
+                </label>
+            </div>
+        
+            <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-lg">
+                <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Formulir Reservasi</h2>
+                
+                <form action="#popup" method="post" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700">Upload Dokumen Reservasi</label>
+                        <input type="file" class="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+        
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+                        Kirim Reservasi
+                    </button>
+                </form>
+            </div>
     </section>
 
     <footer class="text-white bg-gradient-to-r from-teal-600 to-blue-800 py-6 px-4">
