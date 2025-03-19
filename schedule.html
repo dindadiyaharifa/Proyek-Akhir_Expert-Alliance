@@ -8,8 +8,10 @@
   </head>
   <body>
     <nav class="bg-gradient-to-r from-teal-600 to-blue-800 p-4 flex items-center justify-between">
-        <img src="dist/logo.png" alt="LOGO ROOM PENS" class="h-12 w-auto">
-        
+        <div class="flex items-center space-x-4">
+            <img src="dist/logo.png" alt="LOGO ROOM PENS" class="h-12 w-auto">
+        <button class="md:hidden text-white text-3xl">&#9776;</button>
+        </div>
         <div class="hidden md:flex space-x-6">
             <a href="index.html" class="text-white px-3 py-2 rounded-full hover:bg-gray-700 font-semibold">Home</a>
             <a href="schedule.html" class="text-white px-3 py-2 rounded-full hover:bg-gray-700 font-semibold">Schedule</a>
@@ -22,28 +24,58 @@
             <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
                 <span class="text-gray-600 text-xl">&#128100;</span>
             </div>
-            <button class="md:hidden text-white text-3xl">&#9776;</button>
             <button class="text-white text-2xl">&#128276;</button>
         </div>
     </nav>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>No</th>
-                    <th>No</th>
-                    <th>No</th>
-                    <th>No</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-      <footer class="text-white bg-gradient-to-r from-teal-600 to-blue-800 absolute bottom-0 w-full bg-gray-800 p-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 px-6">
+
+    <section>
+        <div>
+            <table class="w-full">
+                <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                        <th class="p-3 text-sm font-semibold tracking-wide">No</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide">Nama Ruangan</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide">Status</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide">Tanggal</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide">Pengguna</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide">Penanggung Jawab</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>Teater D3</th>
+                        <th>Tidak Tersedia</th>
+                        <th>24/02/2025</th>
+                        <th>HIMIT</th>
+                        <th>cika</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>Lapangan D4</th>
+                        <th>Tersedia</th>
+                        <th>-</th>
+                        <th>-</th>
+                        <th>-</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>Ruang HH-105</th>
+                        <th>Tidak Tersedia</th>
+                        <th>24/02/2025</th>
+                        <th>Komunitas OSC</th>
+                        <th>budi</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="text-white bg-gradient-to-r from-teal-600 to-blue-800 py-6 px-4 mt-auto ">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-4 text-sm">
             <div>
-                <img src="dist/logo.png" alt="logo RP" class="h-12 w-auto">
-                <p>Kelola ruangan lebih efisien</p>
+                <img src="dist/logo.png" alt="logo RP" class="h-10 w-auto">
+                <p class="text-white">Kelola ruangan lebih efisien</p>
                 <div class="flex gap-2 mt-2">
                     <span class="text-xl">📞</span>
                     <span class="text-xl">✉</span>
@@ -52,7 +84,7 @@
             </div>
             <div>
                 <h3 class="font-semibold text-white">Informasi</h3>
-                <p>Room PENS - Platform peminjaman dan reservasi ruangan untuk lingkungan PENS yang lebih efisien dan terorganisir.</p>
+                <p class="text-gray-300">Room PENS - Platform peminjaman dan reservasi ruangan.</p>
             </div>
             <div>
                 <h3 class="font-semibold text-white">Navigation</h3>
@@ -65,10 +97,15 @@
             </div>
             <div>
                 <h3 class="font-semibold text-white">Contact</h3>
-                <p>Politeknik Elektronika Negeri Surabaya (PENS), Surabaya, Indonesia</p>
-                <p>contact@roompens.ac.id</p>
-                <p>+62 812-3456-7890</p>
+                <p class="text-gray-300">PENS, Surabaya, Indonesia</p>
+                <p class="text-gray-300">contact@roompens.ac.id</p>
+                <p class="text-gray-300">+62 812-3456-7890</p>
             </div>
+        </div>
+    </footer>
+    <footer class="text-white bg-gradient-to-r from-teal-600 to-blue-800 py-6 px-4 mt-auto ">
+        <div class="text-gray-800 text-sm">
+            <p class="flex justify-center">Copyright © 2025 ROOM PENS. All Right Reserved</p>
         </div>
     </footer>
   </body>
